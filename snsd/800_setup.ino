@@ -2,10 +2,10 @@
 
 void setup() {
   Serial.begin(9600);
-
+  pinMode(38, OUTPUT);
   // load screen
   tft.init();
-  tft.setRotation(1);
+  tft.setRotation(3);
   tft.invertDisplay(true);
 
   h.begin();

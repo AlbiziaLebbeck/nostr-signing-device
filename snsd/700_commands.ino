@@ -2,13 +2,12 @@
 //================================COMMANDS================================//
 //========================================================================//
 
-CommandResponse cmdRes = {"Nostr", "Signing Device"};
+CommandResponse cmdRes = {"", ""};
 
 
 void listenForCommands() {
   if (cmdRes.message != "" || cmdRes.subMessage != "")
     showMessage(cmdRes.message, cmdRes.subMessage);
-
 
   // if the command does not handle an event then it bubbles it up
   EventData event = cmdRes.event;

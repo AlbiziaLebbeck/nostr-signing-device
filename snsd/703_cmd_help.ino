@@ -13,10 +13,10 @@ void help()
 {
   tft.fillScreen(TFT_BLACK);
   tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
+  tft.setTextSize(1);
   tft.setCursor(0, 0);
-  tft.println("Commands");
-  tft.setCursor(0, 20);
+  tft.println("Commands:");
+  tft.setCursor(0, 10);
   tft.setTextSize(1);
 
   tft.println("'/help' show available commands");
